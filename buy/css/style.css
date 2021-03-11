@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+/*===============背景・全体部分=================*/
+body {
+  background-image: url("../img/background.png");
+  font-family:
+    "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku", sans-serif;
+}
+.wrap {
+  width: 980px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container {
+  display: flex;
+}
+.top_btn{
+	position: fixed;
+	top:80%;
+	left:50%;
+	margin-left: 500px;
+}
+/*===========header部分==================*/
+header {
+  margin-bottom: 100px;
+}
+nav {
+  position: fixed;
+  z-index: 1;
+}
+.logo {
+  float: left;
+  width: 75.7%;
+  padding: 5px 0px 7px 25px;
+  background-color: #FFF;
+}
+.dropdown {
+  display: flex;
+}
+.menu {
+  text-align: center;
+}
+.menu-title {
+  width: 77px;
+  background: #FFF;
+  color: #7d5924;
+  font-size: 25px;
+  padding: 10px 0px;
+}
+.sub-menu {
+  display: none;
+  background: #ffffff;
+  position: relative;
+}
+.sub-menu > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 77px;
+  margin-bottom: 5px;
+}
+.sub-menu > ul > li > a {
+  text-decoration: none;
+  color: #7d5924;
+  font-size: 18px;
+  line-height: 30px;
+}
+.menu:hover .sub-menu {
+  display: inline-block;
+}
+.menu-title a, .sub-menu > ul > li > a:hover {
+  background-position: right bottom;
+  background-size: 0 1px;
+}
+.menu-title a:hover, .sub-menu > ul > li > a:hover {
+  background: linear-gradient(currentColor, currentColor) left bottom / 100% 1px no-repeat;
+  transition: background-size .4s;
+}
+.top:hover {
+  color: #359339;
+}
+.spot:hover, .town:hover, .nature:hover {
+  color: #cf0022;
+}
+.chaouen:hover {
+  color: #003399;
+}
+.food:hover {
+  color: #ff9900;
+}
+.stay:hover {
+  color: #f22f5d;
+}
+.buy:hover {
+  color: #003399;
+}
+.cats:hover {
+  color: #c65578;
+}
+/*===========main部分==================*/
+main {
+  text-align: center;
+}
+main>h2{
+	margin-bottom: 20px;
+}
+.slide img{
+	display: inline;
+}
+main > p {
+  margin-bottom: 100px;
+}
+p {
+  color: #7f5a20;
+}
+h2 {
+  display: inline-block;
+  font-size: 30px;
+  color: #039;
+  padding: 5px 0;
+  border-top: 2px solid #039;
+  border-bottom: 2px solid #039;
+}
+/*============section部分==================*/
+section {
+  height: 530px;
+  margin-bottom: 100px;
+  background: right 30px top url("../img/frame_right_top.png") no-repeat, right 30px bottom url("../img/frame_right_bottom.png") no-repeat, left 30px bottom url("../img/frame_left_bottom.png") no-repeat, left 30px top url("../img/frame_left_top.png") no-repeat;
+}
+.container.first_inner {
+  margin: 15px 90px;
+}
+.second_inner{
+	width: 380px;
+	margin-left: 20px;
+	justify-content: space-between;
+}
+.inner_text {
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.inner_text:first-letter {
+  font-size: 50px;
+  color: #039;
+}
+section p:hover img {
+  opacity: 1;
+  animation: flash 1.5s;
+}
+@keyframes flash {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+/*============fotter部分==================*/
+footer {
+  background-color: #805f44;
+  padding: 20px 20px 10px 30px;
+  overflow: hidden;
+}
+.snstext {
+  float: left;
+  font-size: 15px;
+  padding-top: 10px;
+  color: rgba(255, 255, 255, 1.00);
+  margin-right: 20px;
+}
+.aicon {
+  float: left;
+  margin-right: 20px;
+}
+small {
+  float: right;
+  color: rgba(255, 255, 255, 1.00);
+  margin-top: 40px;
+  font-size: 12px;
+}
+.aicon:hover {
+  opacity: 0.7;
+}

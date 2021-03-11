@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>魅惑の旅モロッコ | お土産</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/colorbox.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="js/jquery.smoothScroll.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.colorbox-min.js"></script>
+  <script>$(function () {
+      $('.slide').slick({
+        autoplay: true,
+        slidesToShow: 4,
+        dots: true,
+        autoplay: 50,
+        swipe: true
+      });
+      $(".gallery").colorbox({
+        rel: 'group3',
+        maxWidth: "90%",
+        maxHeight: "90%",
+        slideshow: false,
+        closeButton: false
+      });
+      /*ページ内リンクの調整↓*/
+      var headerHight = 50; /*<ヘッダの高さ*/
+      $('a[href^=#]').click(function () {
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top - headerHight; /*ヘッダの高さ分位置をずらす*/
+        $("html, body").animate({ scrollTop: position }, 550, "swing");
+        return false;
+      });
+    });
+  </script>
+</head>
+
+<body id="buy">
+  <div class="wrap">
+    <header id="page_top">
+      <nav>
+        <figure class="logo"><a href="#"><img src="img/logo.png" width="198" height="36" alt="Morocco" /></a></figure>
+        <div class="dropdown">
+          <div class="menu">
+            <div class="menu-title"><a href="#" class="top">top</a></div>
+          </div>
+          <div class="menu">
+            <div class="menu-title"><a class="spot">spot</a></div>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="#" class="chaouen">chaouen</a></li>
+                <li><a href="#" class="town">town</a></li>
+                <li><a href="#" class="nature">nature</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu">
+            <div class="menu-title"><a href="../food/index.html" class="food">food</a></div>
+          </div>
+          <div class="menu">
+            <div class="menu-title"><a href="#" class="stay">stay</a></div>
+          </div>
+          <div class="menu">
+            <div class="menu-title"><a href="../buy/index.html" class="buy">buy</a></div>
+          </div>
+          <div class="menu">
+            <div class="menu-title"><a href="#" class="cats">cats</a></div>
+          </div>
+        </div>
+      </nav>
+      <h1><img src="img/buy_top_img.jpg" alt="モロッコのお土産" height="600" width="980"></h1>
+      <p class="top_btn"><a href="#page_top"><img src="img/buy_top_btn.png" alt="トップに戻る"></a></p>
+    </header>
+    <main>
+      <h2>モロッコのお土産</h2>
+      <div class="slide">
+        <p><a href="#lamp"><img src="img/slide_lamp.jpg" alt="モロッコのランプ" height="210" width="210"></a></p>
+        <p><a href="#bbch"><img src="img/slide_bbch.jpg" alt="モロッコのスリッパ　バブーシュ" height="210" width="210"></a></p>
+        <p><a href="#dish"><img src="img/slide_dish.jpg" alt="モロッコのお皿" height="210" width="210"></a></p>
+        <p><a href="#lamp"><img src="img/slide_lamp2.jpg" alt="モロッコのランプ" height="210" width="210"></a></p>
+        <p><a href="#spice"><img src="img/slide_spice.jpg" alt="モロッコのスパイス" height="210" width="210"></a></p>
+      </div>
+      <p>異国の香りが漂うモロッコの特産品たち。<br>
+        旅行で訪れたならぜひとも手に取っていただきたい、<br>
+        そんな品を紹介します。</p>
+      <section id="lamp">
+        <h2>ランプ</h2>
+        <div class="container first_inner">
+          <p><a class="gallery" href="img/g_lamp01.jpg"><img src="img/lamp01.jpg" alt="モロッコのランプ" height="410"
+                width="410"></a></p>
+          <div>
+            <div class="container second_inner">
+              <p><a class="gallery" href="img/g_lamp02.jpg"><img src="img/lamp02.jpg" alt="モロッコのランプ" height="180"
+                    width="180"></a></p>
+              <p><a class="gallery" href="img/g_lamp03.jpg"><img src="img/lamp03.jpg" alt="モロッコのランプ" height="180"
+                    width="180"></a></p>
+            </div>
+            <p class="inner_text">アラビアの夜を幾年と灯し続けているランプ。<br>
+              モロッコランプの特徴は薄い鉄板に無数の穴をあけたその形状。<br>
+              いくつもの穴からあふれる独特の明かりは優しく闇を照らします。</p>
+          </div>
+        </div>
+      </section>
+      <section id="bbch">
+        <h2>バブーシュ</h2>
+        <div class="container first_inner">
+          <p><a class="gallery" href="img/g_bbch01.jpg"><img src="img/bbch01.jpg" alt="トルコの靴 バブーシュ" width="410"
+                height="410"></a></p>
+          <div>
+            <div class="container second_inner">
+              <p><a class="gallery" href="img/g_bbch02.jpg"><img src="img/bbch02.jpg" alt="トルコの靴 バブーシュ" width="180"
+                    height="180"></a></p>
+              <p><a class="gallery" href="img/g_bbch03.jpg"><img src="img/bbch03.jpg" alt="トルコの靴 バブーシュ" width="180"
+                    height="180"></a></p>
+            </div>
+            <p class="inner_text">バブーシュとはモロッコの伝統的なスリッパ。<br>
+              かかとの部分がぺったんこになっているのが特徴的で、<br>
+              そのほとんどは革でできています。</p>
+          </div>
+        </div>
+      </section>
+      <section id="dish">
+        <h2>お皿</h2>
+        <div class="container first_inner">
+          <p><a class="gallery" href="img/g_dish01.jpg"><img src="img/dish01.jpg" alt="トルコのお皿" width="410"
+                height="410"></a></p>
+          <div>
+            <div class="container second_inner">
+              <p><a class="gallery" href="img/g_dish02.jpg"><img src="img/dish02.jpg" alt="トルコのお皿" width="180"
+                    height="180"></a></p>
+              <p><a class="gallery" href="img/g_dish03.jpg"><img src="img/dish03.jpg" alt="トルコのお皿" width="180"
+                    height="180"></a></p>
+            </div>
+            <p class="inner_text"> モロッコ内で陶器の二大産地されているフェズとサフィ。<br>
+              特徴的な青は”フェズブルー”と称され人々をひきつけます。<br>
+              サフィの陶器は青と白、赤と青と黄といった原色に近い色合いのデザインが特徴的です。</p>
+          </div>
+        </div>
+      </section>
+      <section id="spice">
+        <h2>スパイス</h2>
+        <div class="container first_inner">
+          <p><a class="gallery" href="img/g_spice01.jpg"><img src="img/spice01.jpg" alt="トルコのスパイス" width="410"
+                height="410"></a></p>
+          <div>
+            <div class="container second_inner">
+              <p><a class="gallery" href="img/g_spice02.jpg"><img src="img/spice02.jpg" alt="トルコのスパイス" width="180"
+                    height="180"></a></p>
+              <p><a class="gallery" href="img/g_spice03.jpg"><img src="img/spice03.jpg" alt="トルコのスパイス" width="180"
+                    height="180"></a></p>
+            </div>
+            <p class="inner_text"> モロッコ料理に欠かすことのできない材料、スパイス。<br>
+              本場のスパイスを使って家に帰ってからもモロッコの風を感じましょう。<br>
+              また、お土産として友達に送ってもGood。 </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="sns">
+        <p class="snstext">share</p>
+        <a href="#"><img src="img/Twitter.png" width="47" height="38" alt="Twitterアイコン" class="aicon"></a>
+        <p class="snstext">follow</p>
+        <a href="#"><img src="img/Instagram.png" width="41" height="41" alt="Instagramアイコン" class="aicon"></a>
+      </div>
+      <small>Copyright © Morocco Tourism Association All Rights Reserved.</small>
+    </footer>
+  </div>
+</body>
+
+</html>
