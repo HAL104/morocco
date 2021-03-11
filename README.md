@@ -3,5 +3,5 @@
 サイト説明　：モロッコについてのサイトです。このサイトはチーム課題として作成しました。  
 　　　　　　　チーム内ではリーダーとして、サイトデザインの方向性決めや作成ページの割り振りを行いました。  
 対象ブラウザ：PC  
-使用ツール　：Photoshop・Illustrator・Dreamweaver
+使用ツール　：Photoshop・Illustrator・Dreamweaver  
 製作期間　　：６日間
